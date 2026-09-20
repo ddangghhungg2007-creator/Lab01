@@ -1,0 +1,150 @@
+﻿@{
+    Layout = null;
+}
+
+@*<!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Đăng ký thông tin sinh viên</title>
+    </head>
+    <body>
+        <h2>NHẬP THÔNG TIN SINH VIÊN</h2>
+
+        <form action="https://google.com" method="POST">
+            <label for="hoten">HỌ VÀ TÊN:</label>
+            <input type="text" id="hoten" name="hoten"><br>
+
+            <label for="mssv">MÃ SỐ SINH VIÊN :</label>
+            <input type="text" id="mssv" name="mssv"><br>
+
+            <label for="ngaysinh">NGÀY SINH:</label>
+            <input type="date" id="ngaysinh" name="ngaysinh"><br>
+
+            <label>CHUYÊN NGÀNH:</label>
+            <input type="radio" id="cnpm" name="chuyennganh" value="CNPM">
+            <label for="cnpm">CNPM</label>
+            <input type="radio" id="httt" name="chuyennganh" value="HTTT">
+            <label for="httt">HTTT</label>
+            <input type="radio" id="anninhmang" name="chuyennganh" value="AN NINH MẠNG">
+            <label for="anninhmang">AN NINH MẠNG</label><br>
+
+            <label>SỞ THÍCH:</label><br>
+            <input type="checkbox" id="vietchuongtrinh" name="sothich" value="VIẾT CHƯƠNG TRÌNH">
+            <label for="vietchuongtrinh">VIẾT CHƯƠNG TRÌNH</label><br>
+            <input type="checkbox" id="phantichcsdl" name="sothich" value="PHÂN TÍCH CSDL">
+            <label for="phantichcsdl">PHÂN TÍCH CSDL</label><br>
+            <input type="checkbox" id="xaydungsodomang" name="sothich" value="XÂY DỰNG SƠ ĐỒ MẠNG">
+            <label for="xaydungsodomang">XÂY DỰNG SƠ ĐỒ MẠNG</label><br>
+
+            <label for="mausac">MÀU SẮC YÊU THÍCH:</label>
+            <input type="color" id="mausac" name="mausac" value="#000000"><br>
+
+            <label for="hinhdaidien">HÌNH ĐẠI DIỆN:</label>
+            <input type="file" id="hinhdaidien" name="hinhdaidien"><br>
+
+            <label for="tendangnhap">TÊN ĐĂNG NHẬP WEB TRƯỜNG:</label>
+            <input type="text" id="tendangnhap" name="tendangnhap"><br>
+
+            <label for="matkhau">MẬT KHẨU ĐĂNG NHẬP WEB TRƯỜNG:</label>
+            <input type="password" id="matkhau" name="matkhau"><br><br>
+
+            <input type="submit" value="Gửi dữ liệu về máy chủ">
+        </form>
+    </body>
+    </html>*@
+<!DOCTYPE html>
+<html>
+<head>
+    <title >Nhập thông tin sinh viên</title>
+</head>
+<body>
+
+    <form action="" method="get">
+        <table border="1" cellpadding="5" cellspacing="0" width="700">
+            <!-- TIÊU ĐỀ -->
+            <tr>
+                <td colspan="5">
+                    <p align="center" >NHẬP THÔNG TIN SINH VIÊN</p>
+                </td>
+            </tr>
+
+            <!-- KHU VỰC THÔNG TIN CÁ NHÂN -->
+            <tr>
+                <td rowspan="3" align="center" valign="middle" width="30%">
+                    <img src="~/Content/images/images.jpg" width="120" />
+                </td>
+                <td width="25%" align="center">HỌ VÀ TÊN</td>
+                <td colspan="3" width="45%">
+                    <input type="text" name="txtHoTen" />
+                </td>
+            </tr>
+            <tr>
+                <td align="center">MÃ SỐ SINH VIÊN</td>
+                <td colspan="3">
+                    <input type="text" name="txtMSSV" />
+                </td>
+            </tr>
+            <tr>
+                <td align="center">NGÀY SINH</td>
+                <td colspan="3">
+                    <input type="date" name="dtpNgaySinh" />
+                </td>
+            </tr>
+
+            <!-- CHUYÊN NGÀNH -->
+            <tr>
+                <td colspan="2" align="center">CHUYÊN NGÀNH</td>
+                <td colspan="3">
+                    <input type="radio" name="rdoChuyenNganh" value="CNPM" /> CNPM
+                    <input type="radio" name="rdoChuyenNganh" value="HTTT" /> HTTT
+                    <input type="radio" name="rdoChuyenNganh" value="ANM" /> AN NINH MẠNG
+                </td>
+            </tr>
+
+            <!-- SỜ THÍCH -->
+            <tr>
+                <td colspan="2" align="center">SỞ THÍCH</td>
+                <td colspan="3">
+                    <input type="checkbox" name="chkSoThich" value="VCT" /> VIẾT CHƯƠNG TRÌNH<br />
+                    <input type="checkbox" name="chkSoThich" value="PTCSDL" /> PHÂN TÍCH CSDL<br />
+                    <input type="checkbox" name="chkSoThich" value="XYSDM" /> XÂY DỰNG SƠ ĐỒ MẠNG
+                </td>
+            </tr>
+
+            <!-- MÀU SẮC YÊU THÍCH & HÌNH ĐẠI DIỆN -->
+            <tr>
+                <td width="25%">MÀU SẮC YÊU THÍCH:</td>
+                <td width="15%">
+                    <input type="color" name="clrMauSac" value="#000000" />
+                </td>
+                <td width="20%">HÌNH ĐẠI DIỆN:</td>
+                <td colspan="2" width="40%">
+                    <input type="file" name="fileHinh" />
+                </td>
+            </tr>
+
+            <!-- TÊN ĐĂNG NHẬP & MẬT KHẨU (ĐÃ THÊM Ô NHẬP TÊN ĐĂNG NHẬP) -->
+            <tr>
+                <td>TÊN ĐĂNG NHẬP WEB TRƯỜNG:</td>
+                <td>
+                    <input type="text" name="txtTenDangNhap" />
+                </td>
+                <td colspan="2">MẬT KHẨU ĐĂNG NHẬP WEB TRƯỜNG:</td>
+                <td>
+                    <input type="password" name="txtMatKhau" />
+                </td>
+            </tr>
+
+            <!-- NÚT GỬI DỮ LIỆU -->
+            <tr>
+                <td colspan="5" align="center">
+                    <input type="submit" value="Gửi dữ liệu về máy chủ" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
